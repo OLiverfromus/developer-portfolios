@@ -1,0 +1,29 @@
+# Configuration Constants for Robot Simulation
+
+# Battery Settings
+BATTERY_FULL = 100  # Maximum battery level
+BATTERY_LOW_THRESHOLD = 10  # Battery level considered low
+MOVE_BATTERY_COST = 10  # Battery cost per movement
+
+# Valid Movement Directions
+VALID_DIRECTIONS = {'up', 'down', 'left', 'right'}
+
+# Command Settings
+COMMAND_MOVE = 'move'
+COMMAND_CHARGE = 'charge'
+COMMAND_STATUS = 'status'
+COMMAND_EXIT = 'exit'
+
+# Messages
+MSG_BATTERY_LOW = "Battery too low! Please charge."
+MSG_INVALID_DIRECTION = "Invalid direction! Use up, down, left, or right."
+MSG_INVALID_MOVE = "Invalid move command! Use 'move up', 'move down', etc."
+MSG_INVALID_COMMAND = "Invalid command! Try again."
+MSG_EXIT = "Exiting... Goodbye!"
+MSG_HELP = """
+Available commands:
+- move <direction> (up/down/left/right)
+- charge
+- status
+- exit
+"""
